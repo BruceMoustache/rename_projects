@@ -3,7 +3,7 @@ import colors
 
 def empty_analyser(directory_file):
 	if os.path.isdir(directory_file) and is_empty_directory(directory_file):
-		print(f'{colors.blue}{directory_file}{colors.reset_color} is empty, renaming..')
+		print(f'{colors.blue}{directory_file}{colors.reset_color} is empty, renaming...')
 		rename_empty_project(directory_file)
 
 def rename_empty_project(directory):
