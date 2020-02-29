@@ -7,7 +7,7 @@ def time_analyzer(directory):
 	# terminal.not_implement('time analyzer')
 	if os.path.isdir(directory):
 		filename = "teste.txt"
-		# Command shell to get last date of alteration within paste
+		# Command shell to get last date of alteration within folder
 		# Save output of command an variable $(filename)
 		command = "date --reference="+directory+" +%d/%m/%y > "+filename
 		os.system(command)
