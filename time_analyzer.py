@@ -1,4 +1,7 @@
 import terminal
+import colors
+import os
+from empty import remove_dotfiles
 
 def time_analyzer(directory):
 	# terminal.not_implement('time analyzer')
