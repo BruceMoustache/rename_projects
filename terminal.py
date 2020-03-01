@@ -52,3 +52,7 @@ def rename(old, new):
 	print(f'renaming {blue}{old}...{reset_color}')
 	os.rename(old, new)
 
+def date(time_format=''):
+	run = f'date +"{time_format}"'
+	return show_content_of_command(run).strip().replace('"', '')
+
