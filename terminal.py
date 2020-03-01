@@ -44,9 +44,9 @@ def show_content_of_command(command):
 	binary_output = run_command(command, return_binary_output=True)
 	return binary_output.decode('utf-8')
 
-def modified_date(relative_path, time_format='%D'):
+def modified_date(relative_path, time_format=''):
 	run = f'date +"{time_format}" -r {relative_path}'
-	return show_content_of_command(run).strip().replace('"', '').replace('/', '.')
+	return show_content_of_command(run).strip().replace('"', '')
 
 def rename(old, new):
 	print(f'renaming {blue}{old}...{reset_color}')
