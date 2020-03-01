@@ -3,6 +3,7 @@ import terminal
 from empty import empty_analyser
 from time_analyzer import time_analyzer
 from time_analyzer import time_analyzer_without_empty
+from undo import undo_analyser
 
 def choice(message=None):
 	global MAP_NAME_TO_ANALYZER
@@ -32,8 +33,9 @@ def all_analysers(directory):
 
 MAP_NAME_TO_ANALYZER = {
 	'all': all_analysers,
-	'empty': empty_analyser,
 	'time': time_analyzer,
+	'empty': empty_analyser,
 	'time (expect empty dirs)': time_analyzer_without_empty,
+	'undo': undo_analyser,
 }
 
