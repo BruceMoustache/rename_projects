@@ -6,7 +6,7 @@ def time_analyzer(path):
 		time_renamer(path)
 
 def time_analyzer_without_empty(path):
-	if terminal.is_directory(path):
+	if terminal.is_directory(path) and not terminal.is_empty_directory(path):
 		time_renamer(path)
 
 def time_renamer(old_name):
