@@ -27,6 +27,7 @@ def all_analysers(directory):
 
 	my_map = MAP_NAME_TO_ANALYZER.copy()
 	del my_map['all']
+	del my_map['undo']
 
 	for analyser in my_map.values():
 		analyser(directory)
